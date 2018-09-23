@@ -99,3 +99,18 @@ git commit " some changes?"
 git commit -m "some changes?"
 git push
 history
+cd linuxlabs
+cp ~/.bash_history lab1p1p3.txt
+git add lab1p1p3.txt
+git commit -m "some changes?"
+git push
+git pull
+git push
+cp /dev/null lab1.txt
+cp ~/.bash_history lab1.txt
+git add lab1.txt
+git commit "p1-p3 done"
+git commit -m "p1-p3 done"
+git merge
+git status
+git mergetool
