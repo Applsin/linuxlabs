@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 su
 git --version
 git config --global user.name "Applsin"
@@ -100,8 +99,3 @@ git commit " some changes?"
 git commit -m "some changes?"
 git push
 history
-=======
-sudo yum install git
-exit
-sudo /etc/cron.daily/man-db.cron
->>>>>>> c5a7912a0fc4827f238b0cebfc77e9d99fd6cb0a
