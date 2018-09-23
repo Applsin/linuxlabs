@@ -21,3 +21,81 @@ apropos -s1 date
 apropos -s1 время
 sudo /etc/cron.daily/man-db.cron
 su
+history
+ls -a
+cat -n ~/bash_history
+cat -n ~/.bash_history
+su
+ls
+whoami
+whoiam
+whoami
+echo "Hello World"
+date
+cal
+man cal
+cal --three
+clear
+pwd
+cd /
+cd ..
+pwd
+ls
+ls -a
+ls /var
+cd ~
+cd ..
+pwd
+ls -l
+ls -i
+man ls
+ls --author
+cd ~
+mkdir fruits
+cd /
+mkdir animals
+su
+sudo mkdir animals
+mkdir ~/animals
+touch /tmp/temp
+cd ~/fruits
+touch "apple" "banana" "pineapple" "lion"
+ls
+man touch
+touch ~/animals "cat.txt" "dog.txt" "elephant.txt"
+ls -l apple
+ls b*
+ls *a
+ls [bi]*
+cp /etc/passwd ~
+cat /etc/issue
+cp /etc/issue apple
+cat apple
+ls
+mv lion ~/animals
+ls
+ma pineapple pineaple
+mv pineapple pineaple
+mv pineaple pineapple
+man wc
+wc -l /etc/passw
+wc -l /etc/passwd
+cd ~
+ln -s /etc/passwd passwd_link
+ln .bash_history history_hard
+ls -l
+ls -l ~/.bash_history
+rm fruits/apple
+mkdir rmme
+rmdir rmme
+rm -fr fruits
+cat /etc/passwd /var/log/boot.log
+cp -r /etc/init.d/ ~
+rm -fr init.d
+cd linuxlabs
+cp ~/.bash_history lab1p1p3.txt
+git add lab1p1p3.txt
+git commit " some changes?"
+git commit -m "some changes?"
+git push
+history
