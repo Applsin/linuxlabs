@@ -1,0 +1,23 @@
+su
+git --version
+git config --global user.name "Applsin"
+git config --global user.email "snuchibuchiinfo@gmail.com"
+git config --list
+cp /dev/null test.txt
+cp bash_history test.txt
+cp ~/.bash_history test.txt
+cd ~
+cp /dev/null test1.txt
+cp .bash_history test1.txt
+ls -la
+cp ~/.bash_history test1.txt
+~/bash_history > test1.txt
+history
+whoami
+whaim
+whoami
+echo "Hello World"
+apropos -s1 date
+apropos -s1 время
+sudo /etc/cron.daily/man-db.cron
+su
