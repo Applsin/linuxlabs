@@ -1,0 +1,65 @@
+    1  yum install git-core
+    2  apt-get install git
+    3  su
+    4  git config --global user.name "Applsin"
+    5  git config --global user.email "snuchibuchiinfo@gmail.com"
+    6  git --version
+    7  git config --list
+    8  git clone https://github.com/Applsin/linuxlabs
+    9  ls
+   10  cd linuxlabs
+   11  touch lab2.txt
+   12  cd
+   13  mkdir test
+   14  cd test
+   15  touch file
+   16  chmod 000 file
+   17  ls 
+   18  ls -l
+   19  echo TEST > file
+   20  cat file
+   21  ll
+   22  chmod 200 file
+   23  ll
+   24  echo TEST > file
+   25  cat file
+   26  chmod 240 file
+   27  ll
+   28  cat file
+   29  chmod 640 file
+   30  ll
+   31  cat file
+   32  cd
+   33  cd test
+   34  mkdir new_file
+   35  rmdir new_file/
+   36  ll
+   37  mkdir dir
+   38  cd dir
+   39  man ll
+   40  echo file_2 > new_file
+   41  ll
+   42  cd ..
+   43  ll
+   44  chmod 664 dir
+   45  ll
+   46  cat dir/new_file
+   47  rm dir/new_file
+   48  chown root file
+   49  chgrp root file
+   50  umask 600
+   51  umask177
+   52  touch file1
+   53  ll
+   54  umask 111
+   55  touch file2
+   56  ll
+   57  cat file
+   58  ls -lR > linuxlabs/lab2.txt
+   59  cd linuxlabs
+   60  ls
+   61  cd
+   62  cdlinuxlabs
+   63  cd linuxlabs
+   64  ls -lR > lab2.txt
+   65  history > lab2.txt
