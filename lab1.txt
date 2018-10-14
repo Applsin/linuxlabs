@@ -1,0 +1,231 @@
+    1  su
+    2  git --version
+    3  git config --global user.name "Applsin"
+    4  git config --global user.email "snuchibuchiinfo@gmail.com"
+    5  git config --list
+    6  cp /dev/null test.txt
+    7  cp bash_history test.txt
+    8  cp ~/.bash_history test.txt
+    9  cd ~
+   10  cp /dev/null test1.txt
+   11  cp .bash_history test1.txt
+   12  ls -la
+   13  cp ~/.bash_history test1.txt
+   14  ~/bash_history > test1.txt
+   15  history
+   16  whoami
+   17  whaim
+   18  whoami
+   19  echo "Hello World"
+   20  apropos -s1 date
+   21  apropos -s1 время
+   22  sudo /etc/cron.daily/man-db.cron
+   23  su
+   24  history
+   25  ls -a
+   26  cat -n ~/bash_history
+   27  cat -n ~/.bash_history
+   28  su
+   29  ls
+   30  whoami
+   31  whoiam
+   32  whoami
+   33  echo "Hello World"
+   34  date
+   35  cal
+   36  man cal
+   37  cal --three
+   38  clear
+   39  pwd
+   40  cd /
+   41  cd ..
+   42  pwd
+   43  ls
+   44  ls -a
+   45  ls /var
+   46  cd ~
+   47  cd ..
+   48  pwd
+   49  ls -l
+   50  ls -i
+   51  man ls
+   52  ls --author
+   53  cd ~
+   54  mkdir fruits
+   55  cd /
+   56  mkdir animals
+   57  su
+   58  sudo mkdir animals
+   59  mkdir ~/animals
+   60  touch /tmp/temp
+   61  cd ~/fruits
+   62  touch "apple" "banana" "pineapple" "lion"
+   63  ls
+   64  man touch
+   65  touch ~/animals "cat.txt" "dog.txt" "elephant.txt"
+   66  ls -l apple
+   67  ls b*
+   68  ls *a
+   69  ls [bi]*
+   70  cp /etc/passwd ~
+   71  cat /etc/issue
+   72  cp /etc/issue apple
+   73  cat apple
+   74  ls
+   75  mv lion ~/animals
+   76  ls
+   77  ma pineapple pineaple
+   78  mv pineapple pineaple
+   79  mv pineaple pineapple
+   80  man wc
+   81  wc -l /etc/passw
+   82  wc -l /etc/passwd
+   83  cd ~
+   84  ln -s /etc/passwd passwd_link
+   85  ln .bash_history history_hard
+   86  ls -l
+   87  ls -l ~/.bash_history
+   88  rm fruits/apple
+   89  mkdir rmme
+   90  rmdir rmme
+   91  rm -fr fruits
+   92  cat /etc/passwd /var/log/boot.log
+   93  cp -r /etc/init.d/ ~
+   94  rm -fr init.d
+   95  cd linuxlabs
+   96  cp ~/.bash_history lab1p1p3.txt
+   97  git add lab1p1p3.txt
+   98  git commit " some changes?"
+   99  git commit -m "some changes?"
+  100  git push
+  101  history
+  102  cd linuxlabs
+  103  cp ~/.bash_history lab1p1p3.txt
+  104  git add lab1p1p3.txt
+  105  git commit -m "some changes?"
+  106  git push
+  107  git pull
+  108  git push
+  109  cp /dev/null lab1.txt
+  110  cp ~/.bash_history lab1.txt
+  111  git add lab1.txt
+  112  git commit "p1-p3 done"
+  113  git commit -m "p1-p3 done"
+  114  git merge
+  115  git status
+  116  git mergetool
+  117  history
+  118  whoami
+  119  ahoaim
+  120  echo Hello World
+  121  date
+  122  cal
+  123  cal -3
+  124  pwd
+  125  cd /
+  126  cd ..
+  127  pwd
+  128  ls
+  129  ls /var
+  130  cd
+  131  cd ..
+  132  pwd
+  133   ls ~ -1
+  134  cd
+  135  ls
+  136  mkdir fruits
+  137  cd /
+  138  mkdir ~/animals
+  139  cd ~/fruits
+  140  ls
+  141  touch apple banana pineapple lion
+  142  ls b*
+  143  ls *a
+  144  ls [bi]*
+  145  cp /etc/passwd
+  146  cp /etc/passwd ~
+  147  cat /etc/issue
+  148  cp /etc/issue apple
+  149  cat apple
+  150  cd
+  151  mv fruits/lion animals/lion
+  152  mv fruits/pineapple fruits/pineaple
+  153  wc --help
+  154  wc -l /etc/passwd
+  155  rm fruits/apple
+  156  mkdir rmme
+  157  rmdir rmme
+  158  rmdir -rf fruits
+  159  rmdir fruits
+  160  rmdir -rf fruits
+  161  rmdir --rf fruits
+  162  rmdir --help
+  163  cat /etc/passwd /var/log/boot.log
+  164  sudo cat /etc/passwd /var/log/boot.log
+  165  cp /etc/init.d/ ~
+  166  cp -r  /etc/init.d/ ~
+  167  ls -l
+  168  rm -rf init.d
+  169  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  170  less /etc/passwd
+  171  cut -d: -f1,3 /etc/passwd | sort
+  172  grep :/bin/bash etc/passwd |wc -l
+  173  grep :/bin/bash /etc/passwd | wc -l
+  174  grep :/bin/bash /etc/passwd | sort -r
+  175  man rpm
+  176  rpm -qa --qf '%{NAME}: %{SIZE}\n' |sort -rn -k2,2
+  177  rpm -qa --qf '%{NAME}: %{SIZE}\n' |sort -rn -k2,2 | hea -n25
+  178  rpm -qa --qf '%{NAME}: %{SIZE}\n' |sort -rn -k2,2 | head -n25
+  179  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+  180  top -b -n1
+  181  top -b -n1 | sort -k0
+  182  top -b -n1 | sort -k1
+  183  top -b -n1 | sort -k1,1
+  184  top -b -n1 | sort -k11
+  185  grep :/bin/bash /etc/passwd | sort -r
+  186  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  187  top -b -n1 | column -t
+  188  man awk
+  189  top -b -n1 | awk '{printf "%35s %s\n",$12,$6}'
+  190  sort -k5 -t: /etc/passwd | tr ":" " "
+  191  cat /etc/passwd | column -ts
+  192  cat /etc/passwd | column -s
+  193  sort -k1 /etc/passwd | awk -F '{printf "%15s %s\n",$1, $1}'
+  194  sort -k1 /etc/passwd | awk -F: '{printf "%15s %s\n",$1, $1}'
+  195  cd /usr/share/doc/git-*
+  196  ls -l
+  197  cat user-manual.txt | tr ' ' '\012'
+  198  cat user-manual.txt | tr ' ' '\012' | head -5
+  199  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |head -5
+  200  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | head -5
+  201  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | grep -v '[^a-z]' |head -20
+  202  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | grep -v '[^a-z]' |sort | head -20
+  203  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | grep -v '[^a-z]' |sort | uniq -c
+  204  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | grep -v '[^a-z]' |sort | uniq -c | sort -rm
+  205  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' |tr -d '[:punct:]' | grep -v '[^a-z]' |sort | uniq -c | sort -rn | head -5
+  206  tr -cs '[:alpha:]' '\n'
+  207  history
+  208  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]'
+  209  history
+  210  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]' | sort
+  211  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]' | sort | unic -c
+  212  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]' | sort | uniq -c
+  213  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn
+  214  cat user-manual.txt | tr -cs '[:alpha:]' '\n'| tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  215  ping ya.ru
+  216  curl wttr.in
+  217  hostname -I
+  218  curl ifconfig.me
+  219  wget https:/raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  220  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  221  less README-ru.md
+  222  id
+  223  sudo id
+  224  less /var/log/messages
+  225  su
+  226  history | less
+  227  history
+  228  ls
+  229  cd linuxlabs
+  230  ls
+  231  history > lab1.txt
