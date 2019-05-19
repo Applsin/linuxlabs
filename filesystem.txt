@@ -1,0 +1,15 @@
+dd if=/dev/zero of=./fs.img bs=1M count=10
+     losetup --find --show ./fs.img
+     losetup --list
+     mkfs -t ext4 /dev/loop0
+     blkid /dev/loop0
+     mount /dev/loop9 /mnt
+     mount /dev/loop0 /mnt
+     mount |grep /mnt
+     df -h /mnt
+     df -hi /mnt
+     umount /dev/loop0
+     tune2fs -l /dev/loop0
+     losetup --detach /dev/loop0
+     losetup --list
+     history >> lab7.txt
